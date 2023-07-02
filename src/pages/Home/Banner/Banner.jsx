@@ -13,10 +13,10 @@ const Banner = () => {
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div className="">
                     <div className="text-left">
-                        <h3 data-aos="fade-down"
+                        <h3 data-aos="fade-right"
                             data-aos-easing="linear"
                             data-aos-duration="1500" className="text-red-600 lg:text-4xl text-xl font-bold my-5">Hi, I am MD Farid</h3>
-                        <p data-aos="fade-down"
+                        <p data-aos="fade-left"
                             data-aos-easing="linear"
                             data-aos-duration="1500" className="text-gray-400">
                             As a MERN Stack web developer, I specialize in building dynamic and robust applications. My expertise lies in seamlessly integrating front-end and back-end components for optimal performance.<span className="hidden lg:block">The widely adopted MERN Stack provides me with abundant resources and community support.With the modular architecture of MERN, I create scalable and maintainable applications.Leveraging JavaScript, I develop server-side logic and interactive user interfaces effectively.
@@ -27,9 +27,9 @@ const Banner = () => {
                 </div>
                 <div className="mx-auto">
                     <div className="avatar" >
-                        <div data-aos="fade-up"
-                            data-aos-easing="linear"
-                            data-aos-duration="1500" className="rounded-full bg-red-600 ">
+                        <div data-aos="zoom-in-up"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-in-sine" className="rounded-full bg-red-600 ">
                             <div className="w-5/6 mx-auto">
                                 <img src={img} />
                             </div>
@@ -56,7 +56,9 @@ const Banner = () => {
                     repeat={Infinity}
                 />
             </div>
-            <div data-aos="fade-up-left" className="text-center pt-5">
+            <div data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine" className="text-center pt-5">
                 <a href="https://drive.google.com/file/d/1UmmIkSnRTGfcyzyXuap5TYEfV19En-EQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
                 </a>
