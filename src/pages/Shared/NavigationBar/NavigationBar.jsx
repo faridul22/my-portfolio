@@ -4,10 +4,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 const NavigationBar = () => {
     const navItems = <>
         <li>
-            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/#">Home</Link>
+            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/">Home</Link>
         </li>
         <li>
-            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/#projects">Projects</Link>
+            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/techStack">Tech Stack</Link>
+        </li>
+        <li>
+            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/projects">Projects</Link>
         </li>
         <li>
             <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/#contact">Contact me</Link>
@@ -29,9 +32,10 @@ const NavigationBar = () => {
                         </ul>
                     </div>
                     <div className="text-red-600">
-                        <a href="https://drive.google.com/file/d/1UmmIkSnRTGfcyzyXuap5TYEfV19En-EQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <a className="lg:hidden sm:block" href="https://drive.google.com/file/d/1UmmIkSnRTGfcyzyXuap5TYEfV19En-EQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
                         </a>
+                        <h3 className="hidden lg:block font-bold w-full text-xl">MD Farid Portfolio</h3>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
