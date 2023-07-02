@@ -1,13 +1,14 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
     return (
         <footer className="footer footer-center p-10 text-white border-t-2 border-gray-500 mt-10 rounded">
             <div className="grid grid-flow-col gap-4">
-                <a className="link link-hover">Home</a>
-                <a className="link link-hover">About me</a>
-                <a className="link link-hover">Contact me</a>
+                <Link to="/" className="link link-hover">Home</Link>
+                <Link to="/about" className="link link-hover">About me</Link>
+                <Link to="/contact" className="link link-hover">Contact me</Link>
             </div>
             <div>
                 <div className="grid grid-flow-col gap-4">
