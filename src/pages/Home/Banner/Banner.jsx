@@ -9,7 +9,7 @@ const Banner = () => {
         AOS.init();
     }, [])
     return (
-        <div className="pt-32 banner-container">
+        <div className="pt-32 max-w-screen-xl mx-auto px-5">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div className="my-auto">
                     <div className="text-left">

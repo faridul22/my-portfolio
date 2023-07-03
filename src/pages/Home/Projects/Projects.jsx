@@ -1,5 +1,6 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { FaGithub, FaGlobe } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 
@@ -10,6 +11,9 @@ const Projects = () => {
     }, [])
     return (
         <div className="pt-32">
+            <Helmet>
+                <title>MD Farid Portfolio || Projects</title>
+            </Helmet>
             <h3 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500" className="font-bold text-2xl text-center uppercase">Projects</h3>
@@ -31,7 +35,7 @@ const Projects = () => {
             <div className="grid grid-cols-1 gap-4">
                 <div data-aos="fade-right"
                     data-aos-easing="linear"
-                    data-aos-duration="1500" className="rounded-md card lg:card-side bg-base-100 shadow-xl w-full border-2 border-gray-500">
+                    data-aos-duration="1500" className="rounded-md card lg:card-side bg-base-100 shadow-xl w-11/12 mx-auto border-2 border-gray-500">
                     <figure><img className="object-cover object-top hover:object-bottom duration-1000 h-96 w-[1800px]" src="https://i.ibb.co/prMVnVQ/pro-drawing-web-app-1.jpg" alt="car!" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Pro Drawing</h2>
@@ -56,7 +60,7 @@ const Projects = () => {
 
                 <div data-aos="fade-up"
                     data-aos-easing="linear"
-                    data-aos-duration="1500" className="rounded-md card lg:card-side bg-base-100 shadow-xl w-full border-2 border-gray-500">
+                    data-aos-duration="1500" className="rounded-md card lg:card-side bg-base-100 shadow-xl w-11/12 mx-auto border-2 border-gray-500">
                     <figure><img className="object-cover object-top hover:object-bottom duration-1000 h-80 w-[1000px]" src="https://i.ibb.co/THwf97T/best-recipes-f43ba-web-app.png" alt="car!" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Best Recipes</h2>
@@ -79,11 +83,11 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div data-aos="fade-left"
+                <div data-aos="fade-down"
                     data-aos-easing="linear"
-                    data-aos-duration="1500" className="rounded-md card lg:card-side bg-base-100 shadow-xl w-full border-2 border-gray-500">
-                    <figure><img className="object-cover object-top hover:object-bottom duration-1000  h-96 w-[2300px] rounded-t-md" src="https://i.ibb.co/7Y1jFg2/magic-toy-box-web-app-1.jpg" alt="car!" /></figure>
-                    <div className="card-body">
+                    data-aos-duration="1500" className="rounded-md card lg:card-side bg-base-100 shadow-xl w-11/12 mx-auto border-2 border-gray-500">
+                    <figure><img className="object-cover object-top hover:object-bottom duration-1000  h-[495px] w-[450px] rounded-t-md" src="https://i.ibb.co/7Y1jFg2/magic-toy-box-web-app-1.jpg" alt="car!" /></figure>
+                    <div className="card-body w-5/6">
                         <h2 className="card-title">Magic Toy Box</h2>
                         <p><strong>Project Description:</strong>This website is related to kids toy cars. It was a E-commerce project. When a user visits this website, usually the homepage and block page And they will see the all toys page. This website has two more pages My Toys and Add a Toy, no user can enter without logging in to these two pages. Apart from these two, there is another page View Details, no one can access this page without login. A logged-in user can go to any route on this website. A logged user can add any new product and update or delete product information.</p>
 

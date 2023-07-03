@@ -4,6 +4,7 @@ import Swal from 'sweetalert2';
 import AOS from 'aos';
 import { TypeAnimation } from 'react-type-animation';
 import { FaEnvelopeOpenText, FaGithub, FaLinkedin, FaLocationDot, FaPhoneVolume } from 'react-icons/fa6';
+import { Helmet } from 'react-helmet-async';
 
 const ContactForm = () => {
 
@@ -33,7 +34,10 @@ const ContactForm = () => {
         AOS.init();
     }, [])
     return (
-        <div className='pt-32'>
+        <div className='pt-32 px-5'>
+            <Helmet>
+                <title>MD Farid Portfolio || Contact me</title>
+            </Helmet>
             <h3 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500" className="font-semibold text-3xl text-center uppercase mb-3">Contact Me</h3>

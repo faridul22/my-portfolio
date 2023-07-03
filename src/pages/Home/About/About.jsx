@@ -1,5 +1,6 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { FaGithub } from 'react-icons/fa6';
 import { TypeAnimation } from "react-type-animation";
 
@@ -9,7 +10,10 @@ const About = () => {
         AOS.init();
     }, [])
     return (
-        <div className="py-32">
+        <div className="py-32 px-5">
+            <Helmet>
+                <title>MD Farid Portfolio</title>
+            </Helmet>
             <h3 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500" className="font-bold text-2xl text-center uppercase">About Me</h3>

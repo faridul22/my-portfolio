@@ -1,5 +1,6 @@
 import AOS from "aos";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { TypeAnimation } from "react-type-animation";
 
 const TechStack = () => {
@@ -7,7 +8,10 @@ const TechStack = () => {
         AOS.init();
     }, [])
     return (
-        <div className="pt-32">
+        <div className="pt-32 px-5">
+            <Helmet>
+                <title>MD Farid Portfolio || Tech Stack</title>
+            </Helmet>
             <h3 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500" className="font-bold text-2xl text-center">My Tech Stack</h3>
