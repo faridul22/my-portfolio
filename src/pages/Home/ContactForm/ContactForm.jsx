@@ -1,6 +1,8 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import AOS from 'aos';
+import { TypeAnimation } from 'react-type-animation';
 
 const ContactForm = () => {
 
@@ -26,13 +28,32 @@ const ContactForm = () => {
             });
     };
 
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
-        <div className='border-2 py-10 my-20 '>
+        <div className=' py-10 my-20 '>
             <h3 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500" className="font-bold text-2xl text-center text-white">Contact Me</h3>
+                data-aos-duration="1500" className="font-semibold text-3xl text-center uppercase mb-3">Contact Me</h3>
 
-            <div >
+            <p className="text-center mt-2 mb-10">
+                <TypeAnimation
+                    sequence={[
+                        'You can contact me to hire me or know more details about me.',
+                        1000,
+                    ]}
+                    speed={10}
+                    cursor={false}
+                    preRenderFirstString={false}
+                    style={{ fontSize: '1em' }}
+                    repeat={1}
+                />
+            </p>
+
+            <div data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                 <form ref={form} onSubmit={sendEmail}>
 
                     <div className="form-control pb-5 w-4/5 mx-auto">
