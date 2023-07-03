@@ -9,7 +9,7 @@ const Banner = () => {
         AOS.init();
     }, [])
     return (
-        <div className="pt-20 banner-container">
+        <div className="pt-32 banner-container">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                 <div className="my-auto">
                     <div className="text-left">
@@ -59,10 +59,10 @@ const Banner = () => {
                 </div>
             </div>
 
-            <div data-aos="fade-down"
+            <div data-aos="fade-zoom"
                 data-aos-duration="1000"
-                data-aos-easing="ease-in-sine" className="text-center pt-5 mt-5">
-                <a href="https://drive.google.com/file/d/1UmmIkSnRTGfcyzyXuap5TYEfV19En-EQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                data-aos-easing="ease-in-sine" className="text-center pt-5">
+                <a href="https://drive.google.com/file/d/1SOmdMls3SHc27H1sMwI6Gr1-0KTb-KbQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
                 </a>
             </div>

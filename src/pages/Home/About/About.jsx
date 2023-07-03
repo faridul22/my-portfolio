@@ -1,6 +1,7 @@
 import AOS from "aos";
 import { useEffect } from "react";
 import { FaGithub } from 'react-icons/fa6';
+import { TypeAnimation } from "react-type-animation";
 
 
 const About = () => {
@@ -8,12 +9,27 @@ const About = () => {
         AOS.init();
     }, [])
     return (
-        <div className="my-36">
+        <div className="py-32">
             <h3 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500" className="font-bold text-2xl text-center uppercase mb-5">About Me</h3>
+                data-aos-duration="1500" className="font-bold text-2xl text-center uppercase">About Me</h3>
+            <p className="text-center mt-2 mb-10">
+                <TypeAnimation
+                    sequence={[
+                        'Here is some information about me.',
+                        1000,
+                    ]}
+                    speed={10}
+                    cursor={false}
+                    preRenderFirstString={false}
+                    style={{ fontSize: '1em' }}
+                    repeat={1}
+                />
+            </p>
             <div className="grid lg:grid-cols-2 gap-5">
-                <div className="text-justify mx-3">
+                <div data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" className="text-justify mx-3">
                     <h3 className="text-2xl font-semibold my-3 text-red-600">Hello,<br /> I am MD Farid from Dhaka, Bangladesh.</h3>
 
                     <p className="my-5">I am a practical and passionate MERN  Stack web developer. At the same time, I am taking a graduate in Bangla literature at a national University. currently, I am finishing a web development course from programming hero with Jhankar Mahbub.</p>
@@ -24,7 +40,10 @@ const About = () => {
                         </a></span>
                     </p>
                 </div>
-                <div >
+
+                <div data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <h3 className="text-2xl font-semibold text-red-600 my-5 text-center border-b-2 w-2/4 mx-auto pb-3 mb-5">My Skills</h3>
                     <div className="grid lg:grid-cols-6 grid-cols-3 gap-5 w-1/2 mx-auto mt-5">
                         <img data-aos="fade-right"
@@ -94,35 +113,30 @@ const About = () => {
                             src="https://i.ibb.co/jT66H38/jwt-1.png" alt="" />
                     </div>
 
-                    <h3 className="text-2xl font-semibold text-center mt-20 border-b-2 w-2/4 mx-auto mb-5 pb-5">Tools</h3>
+                    <h3 data-aos="fade-down"
+                        data-aos-duration="3000" className="text-2xl font-semibold text-center mt-20 border-b-2 w-2/4 mx-auto mb-5 pb-5 text-red-700">Tools</h3>
                     <div className="grid lg:grid-cols-6 grid-cols-3 gap-5 w-1/2 mx-auto mt-5">
-                        <img data-aos="fade-right"
-                            data-aos-duration="3000"
+                        <img
                             width={60}
                             title="VS Code"
                             src="https://i.ibb.co/vjstRh8/vscode-1.png" alt="" />
-                        <img data-aos="fade-right"
-                            data-aos-duration="3000"
+                        <img
                             width={60}
                             title="Git"
                             src="https://i.ibb.co/NWJq8p9/git-svg-1.png" alt="" />
-                        <img data-aos="fade-right"
-                            data-aos-duration="3000"
+                        <img
                             width={60}
                             title="Figma"
                             src="https://i.ibb.co/bNqDnZL/figma-1.png" alt="" />
-                        <img data-aos="fade-right"
-                            data-aos-duration="3000"
+                        <img
                             width={60}
                             title="Chrome dev tools"
                             src="https://i.ibb.co/x8FRgjY/chrome-dev-1.png" alt="" />
-                        <img data-aos="fade-right"
-                            data-aos-duration="3000"
+                        <img
                             width={60}
                             title="Netlify"
                             src="https://i.ibb.co/QFGSFxS/netlify-1.png" alt="" />
-                        <p data-aos="fade-right"
-                            data-aos-duration="3000"
+                        <p
                             width={60}
                             title="GitHub"
                             className="text-3xl"><FaGithub /></p>

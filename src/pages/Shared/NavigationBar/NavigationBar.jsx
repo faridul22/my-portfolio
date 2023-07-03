@@ -1,26 +1,27 @@
-import { Link } from "react-router-dom";
+
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import ActiveLink from "../../../Router/ActiveLink/ActiveLink";
 
 const NavigationBar = () => {
     const navItems = <>
         <li>
-            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/">Home</Link>
+            <ActiveLink className="hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/">Home</ActiveLink>
         </li>
         <li>
-            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/techStack">Tech Stack</Link>
+            <ActiveLink className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/techStack">Tech Stack</ActiveLink>
         </li>
         <li>
-            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/projects">Projects</Link>
+            <ActiveLink className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/projects">Projects</ActiveLink>
         </li>
         <li>
-            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/contact">Contact me</Link>
+            <ActiveLink className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/contact">Contact me</ActiveLink>
         </li>
         <li>
-            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/about">About me</Link>
+            <ActiveLink className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/about">About me</ActiveLink>
         </li>
     </  >
     return (
-        <div className="max-w-screen-xl mx-auto pt-10">
+        <div className="navbar fixed z-0 bg-opacity-30 bg-gray-700 text-gray-70000 max-w-screen-xl rounded-md px-5">
             <div className="navbar text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -32,7 +33,7 @@ const NavigationBar = () => {
                         </ul>
                     </div>
                     <div className="text-red-600">
-                        <a className="lg:hidden sm:block" href="https://drive.google.com/file/d/1UmmIkSnRTGfcyzyXuap5TYEfV19En-EQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <a className="lg:hidden sm:block" href="https://drive.google.com/file/d/1SOmdMls3SHc27H1sMwI6Gr1-0KTb-KbQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                             <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
                         </a>
                         <div className="hidden lg:block font-bold w-full text-xl">

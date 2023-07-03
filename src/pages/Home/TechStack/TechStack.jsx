@@ -7,7 +7,7 @@ const TechStack = () => {
         AOS.init();
     }, [])
     return (
-        <div className="my-36">
+        <div className="pt-32">
             <h3 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500" className="font-bold text-2xl text-center">My Tech Stack</h3>

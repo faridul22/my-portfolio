@@ -3,6 +3,7 @@ import Banner from "../Banner/Banner";
 import Projects from "../Projects/Projects";
 import TechStack from "../TechStack/TechStack";
 import ContactForm from './../ContactForm/ContactForm';
+import About from './../About/About';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
             <TechStack></TechStack>
             <Projects></Projects>
             <ContactForm></ContactForm>
+            <About></About>
         </div>
     );
 };

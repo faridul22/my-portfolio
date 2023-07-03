@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import AOS from 'aos';
 import { TypeAnimation } from 'react-type-animation';
+import { FaEnvelopeOpenText, FaGithub, FaLinkedin, FaLocationDot, FaPhoneVolume } from 'react-icons/fa6';
 
 const ContactForm = () => {
 
@@ -32,7 +33,7 @@ const ContactForm = () => {
         AOS.init();
     }, [])
     return (
-        <div className=' py-10 my-20 '>
+        <div className='pt-32'>
             <h3 data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="1500" className="font-semibold text-3xl text-center uppercase mb-3">Contact Me</h3>
@@ -51,31 +52,60 @@ const ContactForm = () => {
                 />
             </p>
 
-            <div data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="1500">
-                <form ref={form} onSubmit={sendEmail}>
+            <div className='grid lg:grid-cols-2 gap-5'>
+                <div data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                    <h3 className='text-2xl text-center font-semibold'>Get In <span className='text-red-700'>Touch</span></h3>
+                    <p className='text-center'>Contact me directly through the provided form or reach out via the provided contact details to discuss potential collaborations, project inquiries, or any other questions you may have.</p>
+                    <ul className='my-20 w-3/4'>
+                        <li className='text-blue-600 font-semibold'>
+                            <p className='flex items-center'><FaLocationDot className='mr-2' /> <>Location:</><span className='mx-auto text-gray-400'>Dhaka, Bangladesh</span></p>
+                        </li>
+                        <li className='text-blue-600 font-semibold mt-5'>
+                            <p className='flex items-center'><FaPhoneVolume className='mr-2' /> <>Phone:</><span className='mx-auto text-gray-400'>+880 1611-118926</span></p>
+                        </li>
+                        <li className='text-blue-600 font-semibold mt-5'>
+                            <p className='flex items-center'><FaEnvelopeOpenText className='mr-2' /> <>Email:</> <span className='mx-auto text-gray-400'>developerfarid2223@gmail.com</span></p>
+                        </li>
+                    </ul>
+                    <div >
+                        <h3 className='text-2xl'>Hey, I am also <span className='text-red-500'>available here....</span></h3>
+                        <p className='mt-2'><small>Unlock the gates of conversation and grace me with your message.</small></p>
 
-                    <div className="form-control pb-5 w-4/5 mx-auto">
-                        <label>Name</label>
-                        <input required className="input input-bordered w-full bg-gray-900" type="text" name="user_name" placeholder='Your name' />
+                        <div className="flex mt-5 w-1/2 mx-auto">
+                            <a href="https://github.com/faridul22" target="_black" className="text-3xl cursor-pointer mr-3"><FaGithub /></a>
+                            <a href="https://www.linkedin.com/in/md-farid-042a86280/" target="_black" className="text-3xl cursor-pointer text-blue-600"><FaLinkedin /></a>
+                        </div>
                     </div>
+                </div>
+                <div data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                    className='bg-gray-800 px-2 py-10 rounded-md'
+                >
+                    <form ref={form} onSubmit={sendEmail}>
 
-                    <div className="form-control pb-5 w-4/5 mx-auto">
-                        <label>Email</label>
-                        <input required className="input input-bordered w-full bg-gray-900" type="email" name="user_email" placeholder='Your email' />
-                    </div>
+                        <div className="form-control pb-5 w-4/5 mx-auto">
+                            <label>Name</label>
+                            <input required className="input input-bordered w-full bg-gray-900" type="text" name="user_name" placeholder='Your name' />
+                        </div>
 
-                    <div className="form-control pb-5 w-4/5 mx-auto">
-                        <label>Message</label>
-                        <textarea required name="message" className="input input-bordered w-full bg-gray-900 h-[150px]" placeholder='Type your messages' />
-                    </div>
+                        <div className="form-control pb-5 w-4/5 mx-auto">
+                            <label>Email</label>
+                            <input required className="input input-bordered w-full bg-gray-900" type="email" name="user_email" placeholder='Your email' />
+                        </div>
 
-                    <div className="form-control pb-5 w-1/2 mx-auto">
-                        <input className='btn bg-red-600 text-white normal-case' type="submit" value="Send message" />
-                    </div>
+                        <div className="form-control pb-5 w-4/5 mx-auto">
+                            <label>Message</label>
+                            <textarea required name="message" className="input input-bordered w-full bg-gray-900 h-[150px]" placeholder='Type your messages' />
+                        </div>
 
-                </form>
+                        <div className="form-control pb-5 w-4/5 mx-auto">
+                            <input className='btn bg-red-600 text-white normal-case' type="submit" value="Send message" />
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     );
