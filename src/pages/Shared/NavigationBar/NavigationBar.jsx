@@ -16,7 +16,7 @@ const NavigationBar = () => {
             <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/contact">Contact me</Link>
         </li>
         <li>
-            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/#about">About me</Link>
+            <Link className=" hover:font-semibold hover:border-b-4 pb-2 mx-5 text-xl" to="/about">About me</Link>
         </li>
     </  >
     return (

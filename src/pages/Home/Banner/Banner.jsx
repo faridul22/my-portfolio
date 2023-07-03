@@ -11,11 +11,14 @@ const Banner = () => {
     return (
         <div className="pt-20 banner-container">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-                <div className="">
+                <div className="my-auto">
                     <div className="text-left">
                         <h3 data-aos="fade-right"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" className="text-red-600 lg:text-4xl text-xl font-bold my-5">Hi, I am MD Farid</h3>
+                            data-aos-duration="1500" className="text-red-600 lg:text-5xl text-xl font-bold mt-5">Hi, I am MD Farid</h3>
+                        <p data-aos="fade-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500" className="my-3 text-xl">Junior MERN stack developer</p>
                         <p data-aos="fade-left"
                             data-aos-easing="linear"
                             data-aos-duration="1500" className="text-gray-400">
@@ -58,7 +61,7 @@ const Banner = () => {
 
             <div data-aos="fade-down"
                 data-aos-duration="1000"
-                data-aos-easing="ease-in-sine" className="text-center pt-5">
+                data-aos-easing="ease-in-sine" className="text-center pt-5 mt-5">
                 <a href="https://drive.google.com/file/d/1UmmIkSnRTGfcyzyXuap5TYEfV19En-EQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                     <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
                 </a>
