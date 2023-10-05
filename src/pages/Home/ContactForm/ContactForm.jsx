@@ -60,7 +60,7 @@ const ContactForm = () => {
                 <div data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="1500">
-                    <h3 className='text-2xl text-center font-semibold'>Get In <span className='text-red-700'>Touch</span></h3>
+                    <h3 className='text-2xl text-center font-semibold'>Get In <span className='text-[rgb(0,195,169)]'>Touch</span></h3>
                     <p className='text-center'>Contact me directly through the provided form or reach out via the provided contact details to discuss potential collaborations, project inquiries, or any other questions you may have.</p>
                     <ul className='my-20 w-3/4'>
                         <li className='text-blue-600 font-semibold'>
@@ -74,7 +74,7 @@ const ContactForm = () => {
                         </li>
                     </ul>
                     <div >
-                        <h3 className='text-2xl'>Hey, I am also <span className='text-red-500'>available here....</span></h3>
+                        <h3 className='text-2xl'>Hey, I am also <span className='text-[rgb(0,195,169)]'>available here....</span></h3>
                         <p className='mt-2'><small>Unlock the gates of conversation and grace me with your message.</small></p>
 
                         <div className="flex mt-5 w-1/2 mx-auto">
@@ -106,7 +106,7 @@ const ContactForm = () => {
                         </div>
 
                         <div className="form-control pb-5 w-4/5 mx-auto">
-                            <input className='btn bg-red-600 text-white normal-case' type="submit" value="Send message" />
+                            <input className='btn bg-[rgb(0,195,169)] text-white normal-case' type="submit" value="Send message" />
                         </div>
                     </form>
                 </div>

@@ -7,7 +7,7 @@ const ActiveLink = ({ to, children }) => {
         <div className='link-container'>
             <NavLink
                 to={to}
-                className={({ isActive }) => isActive ? "font-semibold border-b-4 pb-2 mx-5 text-lg" : "hover:border-b-4 pb-2 mx-5 text-lg"}
+                className={({ isActive }) => isActive ? "font-semibold text-[rgb(0,195,169)] border-b-4 border-[rgb(0,195,169)] pb-2 mx-5 text-lg" : "hover:border-b-4 border-[rgb(0,195,169)] hover:text-[rgb(0,195,169)] pb-2 mx-5 text-lg"}
             >
                 {children}
             </NavLink>

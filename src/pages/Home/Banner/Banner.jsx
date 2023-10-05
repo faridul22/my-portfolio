@@ -15,7 +15,7 @@ const Banner = () => {
                     <div className="text-left">
                         <h3 data-aos="fade-right"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" className="text-red-600 lg:text-5xl text-xl font-bold mt-5">Hi, I am MD Farid</h3>
+                            data-aos-duration="1500" className="text-[rgb(0,195,169)] lg:text-5xl text-xl font-bold mt-5">Hi, I am MD Farid</h3>
                         <p data-aos="fade-up"
                             data-aos-easing="linear"
                             data-aos-duration="1500" className="my-3 text-xl">MERN stack developer</p>
@@ -27,7 +27,7 @@ const Banner = () => {
                         </p>
                         <div data-aos="fade-right"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" className="font-semibold text-left text-red-600 hidden lg:block h-24">
+                            data-aos-duration="1500" className="font-semibold text-left text-[rgb(0,195,169)] hidden lg:block h-24">
                             <TypeAnimation
                                 sequence={[
                                     'I am a passionate MERN Stack web developer.',
@@ -50,7 +50,7 @@ const Banner = () => {
                     <div className="avatar" >
                         <div data-aos="zoom-in-up"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" className="rounded-full bg-red-600">
+                            data-aos-duration="1500" className="rounded-full bg-[rgb(0,195,169)]">
                             <div className="w-5/6 mx-auto">
                                 <img src={img} />
                             </div>
@@ -63,7 +63,7 @@ const Banner = () => {
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-sine" className="text-center pt-5">
                 <a href="https://drive.google.com/uc?export=download&id=1kWcLrkKWner_sfDSJhbcSZWh6Qkuv7eZ" rel="noopener noreferrer">
-                    <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
+                    <button className="btn btn-outline text-[rgb(0,195,169)] hover:bg-[rgb(0,195,169)] hover:border-none hover:text-white text-center">Download Resume</button>
                 </a>
             </div>
         </div>

@@ -32,9 +32,9 @@ const NavigationBar = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <div className="text-red-600">
+                    <div className="text-[rgb(0,195,169)]">
                         <a className="lg:hidden sm:block" href="https://drive.google.com/uc?export=download&id=1kWcLrkKWner_sfDSJhbcSZWh6Qkuv7eZ" rel="noopener noreferrer">
-                            <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
+                            <button className="btn btn-outline text-[rgb(0,195,169)] hover:bg-[rgb(0,195,169)] hover:border-none hover:text-white text-center">Download Resume</button>
                         </a>
                         <div className="hidden lg:block font-bold w-full text-xl">
                             <span className="my-0">MD Farid</span>

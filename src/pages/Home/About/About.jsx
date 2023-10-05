@@ -34,7 +34,7 @@ const About = () => {
                 <div data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="1500" className="text-justify mx-3">
-                    <h3 className="text-2xl font-semibold my-3 text-red-600">Hello,<br /> I am MD Farid from Dhaka, Bangladesh.</h3>
+                    <h3 className="text-2xl font-semibold my-3 text-[rgb(0,195,169)]">Hello,<br /> I am MD Farid from Dhaka, Bangladesh.</h3>
 
                     <p className="my-5">I am a practical and passionate MERN  Stack web developer. At the same time, I am taking a graduate in Bangla literature at a national University. currently, I am finishing a web development course from programming hero with Jhankar Mahbub.</p>
                     <p> I learned from there a variety of front-end technologies including HTML, CSS, JavaScript, React.JS, Firebase authentication, and a few popular frameworks such as Bootstrap CSS, Tailwind CSS as well as some back-end technologies Node.js, Express.js, MongoDB and more.</p>
@@ -48,7 +48,7 @@ const About = () => {
                 <div data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="1500">
-                    <h3 className="text-2xl font-semibold text-red-600 my-5 text-center border-b-2 w-2/4 mx-auto pb-3 mb-5">My Skills</h3>
+                    <h3 className="text-2xl font-semibold text-[rgb(0,195,169)] my-5 text-center border-b-2 w-2/4 mx-auto pb-3 mb-5">My Skills</h3>
                     <div className="grid lg:grid-cols-6 grid-cols-3 gap-5 w-1/2 mx-auto mt-5">
                         <img data-aos="fade-right"
                             data-aos-duration="3000"
@@ -118,7 +118,7 @@ const About = () => {
                     </div>
 
                     <h3 data-aos="fade-down"
-                        data-aos-duration="3000" className="text-2xl font-semibold text-center mt-20 border-b-2 w-2/4 mx-auto mb-5 pb-5 text-red-700">Tools</h3>
+                        data-aos-duration="3000" className="text-2xl font-semibold text-center mt-20 border-b-2 w-2/4 mx-auto mb-5 pb-5 text-[rgb(0,195,169)]">Tools</h3>
                     <div className="grid lg:grid-cols-6 grid-cols-3 gap-5 w-1/2 mx-auto mt-5">
                         <img
                             width={60}
