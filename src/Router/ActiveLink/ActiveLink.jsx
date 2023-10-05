@@ -2,6 +2,7 @@
 import { NavLink } from 'react-router-dom';
 import './ActiveLink.css'
 
+// eslint-disable-next-line react/prop-types
 const ActiveLink = ({ to, children }) => {
     return (
         <div className='link-container'>

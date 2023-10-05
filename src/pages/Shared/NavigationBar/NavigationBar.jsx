@@ -1,6 +1,7 @@
 
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import ActiveLink from "../../../Router/ActiveLink/ActiveLink";
+import './NavigationBar.css'
 
 const NavigationBar = () => {
     const navItems = <>
@@ -37,7 +38,7 @@ const NavigationBar = () => {
                             <button className="btn btn-outline text-[rgb(0,195,169)] hover:bg-[rgb(0,195,169)] hover:border-none hover:text-white text-center">Download Resume</button>
                         </a>
                         <div className="hidden lg:block font-bold w-full text-xl">
-                            <span className="my-0">MD Farid</span>
+                            <span className="my-0 name-style">MD Farid</span>
                         </div>
                     </div>
                 </div>
