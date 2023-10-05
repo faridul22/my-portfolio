@@ -18,7 +18,7 @@ const Banner = () => {
                             data-aos-duration="1500" className="text-red-600 lg:text-5xl text-xl font-bold mt-5">Hi, I am MD Farid</h3>
                         <p data-aos="fade-up"
                             data-aos-easing="linear"
-                            data-aos-duration="1500" className="my-3 text-xl">Junior MERN stack developer</p>
+                            data-aos-duration="1500" className="my-3 text-xl">MERN stack developer</p>
                         <p data-aos="fade-left"
                             data-aos-easing="linear"
                             data-aos-duration="1500" className="text-gray-400">
@@ -62,7 +62,7 @@ const Banner = () => {
             <div data-aos="fade-zoom"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-sine" className="text-center pt-5">
-                <a href="https://drive.google.com/file/d/1SOmdMls3SHc27H1sMwI6Gr1-0KTb-KbQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/uc?export=download&id=1kWcLrkKWner_sfDSJhbcSZWh6Qkuv7eZ" rel="noopener noreferrer">
                     <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
                 </a>
             </div>

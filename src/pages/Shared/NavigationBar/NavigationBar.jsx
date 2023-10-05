@@ -33,7 +33,7 @@ const NavigationBar = () => {
                         </ul>
                     </div>
                     <div className="text-red-600">
-                        <a className="lg:hidden sm:block" href="https://drive.google.com/file/d/1SOmdMls3SHc27H1sMwI6Gr1-0KTb-KbQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <a className="lg:hidden sm:block" href="https://drive.google.com/uc?export=download&id=1kWcLrkKWner_sfDSJhbcSZWh6Qkuv7eZ" rel="noopener noreferrer">
                             <button className="btn btn-outline text-red-600 hover:bg-red-700 hover:border-none hover:text-white text-center">Download Resume</button>
                         </a>
                         <div className="hidden lg:block font-bold w-full text-xl">
@@ -48,7 +48,7 @@ const NavigationBar = () => {
                 </div>
                 <div className="navbar-end">
                     <a href="https://github.com/faridul22" target="_black" className="text-xl cursor-pointer mr-3"><FaGithub /></a>
-                    <a href="https://www.linkedin.com/in/md-farid-042a86280/" target="_black" className="text-xl cursor-pointer"><FaLinkedin /></a>
+                    <a href="https://www.linkedin.com/in/md-farid-5a5633248" target="_black" className="text-xl cursor-pointer"><FaLinkedin /></a>
                 </div>
             </div>
         </div>

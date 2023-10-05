@@ -79,7 +79,7 @@ const ContactForm = () => {
 
                         <div className="flex mt-5 w-1/2 mx-auto">
                             <a href="https://github.com/faridul22" target="_black" className="text-3xl cursor-pointer mr-3"><FaGithub /></a>
-                            <a href="https://www.linkedin.com/in/md-farid-042a86280/" target="_black" className="text-3xl cursor-pointer text-blue-600"><FaLinkedin /></a>
+                            <a href="https://www.linkedin.com/in/md-farid-5a5633248/" target="_black" className="text-3xl cursor-pointer text-blue-600"><FaLinkedin /></a>
                         </div>
                     </div>
                 </div>

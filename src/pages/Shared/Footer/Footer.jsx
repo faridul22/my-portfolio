@@ -13,7 +13,7 @@ const Footer = () => {
             <div>
                 <div className="grid grid-flow-col gap-4">
                     <a href="https://github.com/faridul22" target="_black" className="text-xl cursor-pointer mr-3"><FaGithub /></a>
-                    <a href="https://www.linkedin.com/in/md-farid-042a86280/" target="_black" className="text-xl cursor-pointer"><FaLinkedin /></a>
+                    <a href="https://www.linkedin.com/in/md-farid-5a5633248" target="_black" className="text-xl cursor-pointer"><FaLinkedin /></a>
                 </div>
             </div>
             <div>
