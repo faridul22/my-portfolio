@@ -1,3 +1,4 @@
+import moment from "moment";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -17,7 +18,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p>Copyright © 2023 - All right reserved by Me</p>
+                <p>Copyright &copy; {moment().format('YYYY')} - All right reserved by Me</p>
             </div>
         </footer>
     );
