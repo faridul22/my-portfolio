@@ -62,9 +62,13 @@ const Banner = () => {
             <div data-aos="fade-zoom"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-sine" className="text-center pt-5">
-                <a href="https://drive.google.com/uc?export=download&id=1_du_S-5RKYpXZDfufzAnFfMKk0lyFeLp" rel="noopener noreferrer">
-                    <button className="btn btn-outline text-[rgb(0,195,169)] hover:bg-[rgb(0,195,169)] hover:border-none hover:text-white text-center">Download Resume</button>
+
+                <a href="https://drive.google.com/uc?export=download&id=15OVCtW-lLpo8f4ZUxYSSr6ocWQmmcDbp" download="MD Farid Resume_MERN stack.pdf" rel="noopener noreferrer">
+                    <button className="btn btn-outline text-[rgb(0,195,169)] hover:bg-[rgb(0,195,169)] hover:border-none hover:text-white text-center">
+                        Download Resume
+                    </button>
                 </a>
+
             </div>
         </div>
     );
